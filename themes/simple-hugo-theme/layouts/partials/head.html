@@ -20,4 +20,6 @@
     {{ template "_internal/google_analytics_async.html" . }}
 
     {{ partial "head_custom" . }}
+
+    <meta name="robots" content="{{ if eq .Params.robots "" }}{{ .Site.Params.robots }}{{ else }}{{ .Params.robots }}{{ end }}">
 </head>

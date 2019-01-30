@@ -1,5 +1,11 @@
 {{ block "footer" . }}
 <div class="footer">
+    {{/* Display copyright if available */}}
+    {{ if .Site.Copyright }}
+    <span class="copyright">
+        {{- .Site.Copyright -}}
+    </span>
+    {{ end }}
     {{/* Display links if available */}}
     {{ if .Site.Menus.footer }}
     <div class="footer-links">
@@ -13,11 +19,6 @@
     </div>
     {{ end }}
 
-    {{/* Display copyright if available */}}
-    {{ if .Site.Copyright }}
-    <div class="copyright">
-        {{- .Site.Copyright -}}
-    </div>
-    {{ end }}
+
 </div>
 {{ end }}

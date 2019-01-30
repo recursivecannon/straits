@@ -1,6 +1,5 @@
 {{ block "header" . }}
 <div class="header">
-    <h1>
         <a href="{{ .Site.BaseURL | relLangURL }}">{{- .Site.Title -}}</a>
         <div class="header-menu">
             {{- range .Site.Menus.main -}}
@@ -11,6 +10,5 @@
             {{- end -}}
             {{ end }}
         </div>
-    </h1>
 </div>
 {{ end }}
