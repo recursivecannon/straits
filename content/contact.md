@@ -13,13 +13,13 @@ Alternatively, you can just submit the form below to reach me.
 
 <form name="contact" method="POST" data-netlify="true" style="max-width:460px;margin-right:10px;">
     <div class="custom-form">
-        <input type="text" name="name" placeholder="Name"> 
+        <input type="text" name="name" placeholder="Name" required=""> 
     </div>
     <div class="custom-form">
-        <input type="email" name="email" placeholder="Email">
+        <input type="email" name="email" placeholder="Email" required="">
     </div>
     <div class="custom-form">
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea name="message" placeholder="Message" required=""></textarea>
     </div>
     <div class="custom-form">
         <button type="submit" style="font-family:sans-serif;width:70px;height:30px;border-radius:3px;border:1px solid #cccccc;color:#444;">Send</button>
